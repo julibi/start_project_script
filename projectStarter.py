@@ -47,7 +47,7 @@ def setupDirectory(directoryName):
   else:
     print ("Succesfully created the directory {}".format(directoryName))
   os.chdir(directoryName)
-  answer = raw_input("Would you like to create a README.md? Y/N \nIt is recommended to create a README.md in order to automatically create a repo on GitHub.").upper()
+  answer = raw_input("Would you like to create a README.md?\nIt is recommended to create a README.md in order to automatically create a repo on GitHub.\nType 'yes' if you want to create one.\n").upper()
   if answer == ('Y' or 'YES'):
     createREADME(directoryName)
     pushToGithub(directoryName)
